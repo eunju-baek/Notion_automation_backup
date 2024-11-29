@@ -32,7 +32,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add notion_backup.xlsx || echo "No changes to commit"
+          git add .  # 모든 변경 사항 및 새 파일 추가
           git commit -m "Convert JSON to Excel" || echo "Nothing to commit"
           git push || echo "Push failed"
         env:
