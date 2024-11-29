@@ -12,7 +12,16 @@ headers = {
 database_id = '134d13da8dfa80a29232e955d7482ade'
 url = f'https://api.notion.com/v1/databases/{database_id}/query'
 response = requests.post(url, headers=headers)
+if response.status_code != 200:
+    print(f"Error: API request failed with status code {response.status_code}")
+    print(f"Response: {response.text}")
+    exit(1)
+
 data = response.json()
+if 'results' not in data:
+    print("Error: 'results' key not found in API response")
+    print(f"Response: {data}")
+    exit(1)
 
 # 백업 폴더 생성
 backup_folder = 'notion_backup'
