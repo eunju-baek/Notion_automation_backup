@@ -1,13 +1,16 @@
-name: Monthly Notion Backup
+name: Backup Workflow
 
 on:
   push:
-    branches: [ main ]  # 또는 your-default-branch-name
-  workflow_dispatch:
+    branches:
+      - main
 
 jobs:
-  build:
+  backup:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # 이 줄이 중요합니다.
+      
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -36,4 +39,4 @@ jobs:
           git commit -m "Backup update"
           git push
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 이 줄이 중요합니다.
