@@ -32,8 +32,8 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add notion_backup.csv
-          git commit -m "Convert JSON to CSV"
-          git push
+          git add notion_backup.csv || echo "No changes to commit"
+          git commit -m "Convert JSON to CSV" || echo "Nothing to commit"
+          git push || echo "Push failed"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # GITHUB_TOKEN 사용
