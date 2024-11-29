@@ -1,1 +1,73 @@
-{'object': 'page', 'id': '134d13da-8dfa-802f-b5ab-d8da6c6c2c7d', 'created_time': '2024-11-04T02:08:00.000Z', 'last_edited_time': '2024-11-05T02:10:00.000Z', 'created_by': {'object': 'user', 'id': '2b303110-a834-4312-8424-fec3c5c605ba'}, 'last_edited_by': {'object': 'user', 'id': '2b303110-a834-4312-8424-fec3c5c605ba'}, 'cover': None, 'icon': None, 'parent': {'type': 'database_id', 'database_id': '134d13da-8dfa-80a2-9232-e955d7482ade'}, 'archived': False, 'in_trash': False, 'properties': {'완료': {'id': '%60%5E%5BS', 'type': 'checkbox', 'checkbox': True}, '파일과 미디어': {'id': 'op%60%3D', 'type': 'files', 'files': []}, 'Tags': {'id': 'pngp', 'type': 'multi_select', 'multi_select': []}, 'Date': {'id': 'zWTK', 'type': 'date', 'date': {'start': '2024-11-04', 'end': None, 'time_zone': None}}, 'Name': {'id': 'title', 'type': 'title', 'title': [{'type': 'text', 'text': {'content': '교육자료 PPT 제작', 'link': None}, 'annotations': {'bold': False, 'italic': False, 'strikethrough': False, 'underline': False, 'code': False, 'color': 'default'}, 'plain_text': '교육자료 PPT 제작', 'href': None}]}}, 'url': 'https://www.notion.so/PPT-134d13da8dfa802fb5abd8da6c6c2c7d', 'public_url': None}
+{
+    "object": "page",
+    "id": "134d13da-8dfa-802f-b5ab-d8da6c6c2c7d",
+    "created_time": "2024-11-04T02:08:00.000Z",
+    "last_edited_time": "2024-11-05T02:10:00.000Z",
+    "created_by": {
+        "object": "user",
+        "id": "2b303110-a834-4312-8424-fec3c5c605ba"
+    },
+    "last_edited_by": {
+        "object": "user",
+        "id": "2b303110-a834-4312-8424-fec3c5c605ba"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+        "type": "database_id",
+        "database_id": "134d13da-8dfa-80a2-9232-e955d7482ade"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+        "완료": {
+            "id": "%60%5E%5BS",
+            "type": "checkbox",
+            "checkbox": true
+        },
+        "파일과 미디어": {
+            "id": "op%60%3D",
+            "type": "files",
+            "files": []
+        },
+        "Tags": {
+            "id": "pngp",
+            "type": "multi_select",
+            "multi_select": []
+        },
+        "Date": {
+            "id": "zWTK",
+            "type": "date",
+            "date": {
+                "start": "2024-11-04",
+                "end": null,
+                "time_zone": null
+            }
+        },
+        "Name": {
+            "id": "title",
+            "type": "title",
+            "title": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "교육자료 PPT 제작",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "교육자료 PPT 제작",
+                    "href": null
+                }
+            ]
+        }
+    },
+    "url": "https://www.notion.so/PPT-134d13da8dfa802fb5abd8da6c6c2c7d",
+    "public_url": null
+}

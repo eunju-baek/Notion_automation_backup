@@ -1,1 +1,69 @@
-{'object': 'page', 'id': '137d13da-8dfa-8019-8256-fe40d8bdf39c', 'created_time': '2024-11-07T08:50:00.000Z', 'last_edited_time': '2024-11-07T08:54:00.000Z', 'created_by': {'object': 'user', 'id': '2b303110-a834-4312-8424-fec3c5c605ba'}, 'last_edited_by': {'object': 'user', 'id': '2b303110-a834-4312-8424-fec3c5c605ba'}, 'cover': None, 'icon': None, 'parent': {'type': 'database_id', 'database_id': '134d13da-8dfa-80a2-9232-e955d7482ade'}, 'archived': False, 'in_trash': False, 'properties': {'완료': {'id': '%60%5E%5BS', 'type': 'checkbox', 'checkbox': False}, '파일과 미디어': {'id': 'op%60%3D', 'type': 'files', 'files': []}, 'Tags': {'id': 'pngp', 'type': 'multi_select', 'multi_select': []}, 'Date': {'id': 'zWTK', 'type': 'date', 'date': None}, 'Name': {'id': 'title', 'type': 'title', 'title': [{'type': 'text', 'text': {'content': ' 모니터 나가면 전산실 연락', 'link': None}, 'annotations': {'bold': False, 'italic': False, 'strikethrough': False, 'underline': False, 'code': False, 'color': 'default'}, 'plain_text': ' 모니터 나가면 전산실 연락', 'href': None}]}}, 'url': 'https://www.notion.so/137d13da8dfa80198256fe40d8bdf39c', 'public_url': None}
+{
+    "object": "page",
+    "id": "137d13da-8dfa-8019-8256-fe40d8bdf39c",
+    "created_time": "2024-11-07T08:50:00.000Z",
+    "last_edited_time": "2024-11-07T08:54:00.000Z",
+    "created_by": {
+        "object": "user",
+        "id": "2b303110-a834-4312-8424-fec3c5c605ba"
+    },
+    "last_edited_by": {
+        "object": "user",
+        "id": "2b303110-a834-4312-8424-fec3c5c605ba"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+        "type": "database_id",
+        "database_id": "134d13da-8dfa-80a2-9232-e955d7482ade"
+    },
+    "archived": false,
+    "in_trash": false,
+    "properties": {
+        "완료": {
+            "id": "%60%5E%5BS",
+            "type": "checkbox",
+            "checkbox": false
+        },
+        "파일과 미디어": {
+            "id": "op%60%3D",
+            "type": "files",
+            "files": []
+        },
+        "Tags": {
+            "id": "pngp",
+            "type": "multi_select",
+            "multi_select": []
+        },
+        "Date": {
+            "id": "zWTK",
+            "type": "date",
+            "date": null
+        },
+        "Name": {
+            "id": "title",
+            "type": "title",
+            "title": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": " 모니터 나가면 전산실 연락",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": " 모니터 나가면 전산실 연락",
+                    "href": null
+                }
+            ]
+        }
+    },
+    "url": "https://www.notion.so/137d13da8dfa80198256fe40d8bdf39c",
+    "public_url": null
+}
