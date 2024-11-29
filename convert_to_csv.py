@@ -17,11 +17,14 @@ for filename in os.listdir(folder_path):
         try:
             with open(file_path, 'r', encoding='utf-8') as file:
                 data = json.load(file)
-                # 필요한 데이터 추출 (예: 제목과 내용)
+
+                # 필요한 데이터 추출
                 page_data = {
-                    'id': data.get('id'),
-                    'title': data.get('properties', {}).get('Name', {}).get('title', [{}])[0].get('plain_text', ''),
-                    'content': json.dumps(data)  # 전체 내용을 문자열로 저장
+                    'Name': data.get('properties', {}).get('Name', {}).get('title', [{}])[0].get('plain_text', ''),
+                    'Tags': [tag['name'] for tag in data.get('properties', {}).get('Tags', {}).get('multi_select', [])],
+                    '완료': data.get('properties', {}).get('완료', {}).get('checkbox', False),
+                    '파일과 미디어': [file['name'] for file in data.get('properties', {}).get('파일과 미디어', {}).get('files', [])],
+                    'Date': data.get('properties', {}).get('Date', {}).get('date', None),
                 }
                 data_list.append(page_data)
         except json.JSONDecodeError as e:
@@ -36,4 +39,3 @@ if data_list:  # 데이터가 있을 경우에만 CSV로 저장
     print(f"CSV 파일이 '{output_csv}'로 저장되었습니다.")
 else:
     print("No valid data found to convert.")
-    
