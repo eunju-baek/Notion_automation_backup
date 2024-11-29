@@ -36,3 +36,4 @@ if data_list:  # 데이터가 있을 경우에만 CSV로 저장
     print(f"CSV 파일이 '{output_csv}'로 저장되었습니다.")
 else:
     print("No valid data found to convert.")
+    
