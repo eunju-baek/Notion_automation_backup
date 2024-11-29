@@ -1,11 +1,12 @@
 import requests
 import os
+import json  # json 모듈 추가
 
 # Notion API 설정
 headers = {
     'Authorization': 'Bearer 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',
     'Notion-Version': '2022-06-28',
-    'Content-Type':'application/json'
+    'Content-Type': 'application/json'
 }
 
 # 데이터베이스 쿼리
@@ -32,9 +33,9 @@ for page in data['results']:
     page_id = page['id']
     page_title = page['properties']['Name']['title'][0]['plain_text']
     
-    # 페이지 내용 저장
-    with open(f'{backup_folder}/{page_title}.json', 'w') as f:
-        f.write(str(page))
+    # 페이지 내용 저장 (올바른 JSON 형식으로 저장)
+    with open(f'{backup_folder}/{page_title}.json', 'w', encoding='utf-8') as f:
+        json.dump(page, f, ensure_ascii=False, indent=4)  # json.dump() 사용
     
     # 파일 다운로드
     if 'Files' in page['properties']:
