@@ -1,11 +1,9 @@
 name: Monthly Notion Backup
 
 on:
-  schedule:
-    - cron: '0 0 31 1,3,5,7,8,10,12 *'
-    - cron: '0 0 30 4,6,9,11 *'
-    - cron: '0 0 28 2 *'
-  workflow_dispatch:  # 수동 실행을 위한 트리거 추가
+  push:
+    branches: [ main ]  # 또는 your-default-branch-name
+  workflow_dispatch:
 
 jobs:
   backup:
