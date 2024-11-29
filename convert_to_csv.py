@@ -1,11 +1,16 @@
 import os
 import json
 import pandas as pd
+from datetime import datetime  # datetime 모듈 추가
 
 # JSON 파일이 저장된 폴더 경로
 folder_path = 'notion_backup'
-# 결과를 저장할 CSV 파일 경로
-output_csv = 'notion_backup.csv'
+
+# 현재 날짜를 YYYYMMDD 형식으로 가져오기
+current_date = datetime.now().strftime("%Y%m%d")
+
+# 결과를 저장할 CSV 파일 경로 (엑셀 확장자로 변경)
+output_csv = f'{current_date}_DBbackup.xlsx'
 
 # 모든 JSON 데이터를 저장할 리스트
 data_list = []
@@ -32,10 +37,10 @@ for filename in os.listdir(folder_path):
         except Exception as e:
             print(f"An error occurred while processing {file_path}: {e}")
 
-# DataFrame 생성 후 CSV로 저장
+# DataFrame 생성 후 엑셀로 저장
 if data_list:  # 데이터가 있을 경우에만 CSV로 저장
     df = pd.DataFrame(data_list)
-    df.to_csv(output_csv, index=False, encoding='utf-8-sig')
-    print(f"CSV 파일이 '{output_csv}'로 저장되었습니다.")
+    df.to_excel(output_csv, index=False, encoding='utf-8-sig')  # to_excel() 사용
+    print(f"엑셀 파일이 '{output_csv}'로 저장되었습니다.")
 else:
     print("No valid data found to convert.")
